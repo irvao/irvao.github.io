@@ -203,7 +203,9 @@
   .pasta .icone .sel { visibility: hidden; grid-area: 1 / 1; background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAaCAYAAADSbo4CAAAAwUlEQVR4nO2X0QnDMAxET6EDeJzO5UE6l8fpBu5Ho9YVcSI3skShB+Y4COT0QMQhPFWhFw08q9YCoN6udwCA0kdKD6muZVQ+tYi2hChjecaJzPKviEwoUalFE6kL8N6KKOWSsIQ2aPQvIuVeJJe0md2LyMXg7FakR4Kd0Hz0omSyvr1JZT7y3ydiRcKVSC7pY1u28iGRs5PyS/cyMJmIhgSX6hLxINFmEyJ7k2oda5HXgdONTOZTRCxIsPPPUvR1kR6ApKTIZMO9ggAAAABJRU5ErkJggg==") 0 0 / 100% 100%; image-rendering: pixelated; }
   body[data-cor="verde"] .pasta .icone .sel { background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAaCAYAAADSbo4CAAAAsklEQVR4nO2WUQqAMAxDU/GUO6DXnB+uOovTTrtOwcAIAcH0YXGERRF6UcWzag0A4pRqKL2mdJViKqPypkW0JUQZy1NPpJXfItKgRKQcTU+NwLYVvRRoWd9X6C8i5V4k0HF2LyIXg7NbkRIJdkL20+slk/UtTSrzlX+fiBUJVyKB9ttylC+JPJ2UX3qWgcZENCS4VJGIB4k8mxA5m1TrSEXWA6cbmcyPiFiQYOcvofd1kWY38Fr93OWWAQAAAABJRU5ErkJggg=="); }
   body[data-cor="vermelho"] .pasta .icone .sel { background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAaCAYAAADSbo4CAAAAvklEQVR4nO2X0QnDMAxET6HzdIHO7wW8kPoRO3VEnMiNLFHogTkOAjk9EHEIqxh60cCzai0AmJ+vtY3OR0oPiUsZlU8toi0hyliecSKz/CsiE0owtWgi9QA+WxElyglLaING/yJS7kUop8PsXkQuRs1uRXokNkfz0YuSyfr2JpX50vHrRMxIeBKhnHbbcpQvidyetLz0LAOTiWhI1FJdIh4kdhkGRM4m1TpKke3A6UYm8y0iFiSq15+l6OsivQHUl5yOHxiU0gAAAABJRU5ErkJggg=="); }
-  .pasta .nome { padding: 1px 6px; font-family: "Silkscreen", monospace; font-size: 15px; }
+  .pasta .nome { padding: 1px 6px; font-family: "Silkscreen", monospace; font-size: 15px; text-align: center; line-height: 1.25; }
+  .pasta .icone { position: relative; }
+  .pasta .icone .seta { position: absolute; left: -4px; bottom: -4px; width: 30px; height: 30px; z-index: 1; }
   .pasta .desc { font-size: 19px; line-height: 1.1; text-align: center; color: #3a3a36; }
   .pasta:hover .sel, .pasta:focus-visible .sel { visibility: visible; }
   .pasta:hover .nome, .pasta:focus-visible .nome { background: var(--preto); color: var(--branco); }
@@ -406,8 +408,26 @@ irvao@casa:~$ uptime
                 <span class="nome">Jogo</span>
               </a>
             </li>
+            <li>
+              <a class="pasta atalho" href="https://downforeveryoneorjustme.com/" target="_blank" rel="noopener" aria-label="Está online? (abre em outra aba)">
+                <span class="icone" aria-hidden="true"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAaCAYAAADSbo4CAAAAvklEQVR4nO2XUQrDMAxD5bID+CP3P+E+eoPsY/WWmaZ1VsdmMEEQgkLlB6Yp4akKu2jgWbMWAHVd7wAAo4+UHlLdyph8ahFrCVXG84wTmeVfEZlQolKLJlM34L0VWWIuWFIbNPoX0Qovwlx2c3gRvRiSw4r0SIgTmo9ellzWtzepzmf++0S8SIQSYS4f27KXT4lcnVReepSByUQsJKRUl0gEiTa7EDma1OrYirwOgm5kOl8i4kFCXH6Wsq+L9AAW5sIaJTwqwAAAAABJRU5ErkJggg==" alt=""><span class="sel"></span><img class="seta" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAATElEQVR4nGNkYGD4z0AEYGFgYGD48OENXkUCAiIQheiCyABmCBO6wg8f3mC1AUMhzFR0xRgKsSnCUIiuCJnNhEsRThMJBREjA5EBDgBQYx9FwC3T+AAAAABJRU5ErkJggg==" alt=""></span>
+                <span class="nome">Está online?</span>
+              </a>
+            </li>
+            <li>
+              <a class="pasta atalho" href="https://cloudconvert.com/" target="_blank" rel="noopener" aria-label="Conversor de arquivo (abre em outra aba)">
+                <span class="icone" aria-hidden="true"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAaCAYAAADSbo4CAAAAvklEQVR4nO2XUQrDMAxD5bID+CP3P+E+eoPsY/WWmaZ1VsdmMEEQgkLlB6Yp4akKu2jgWbMWAHVd7wAAo4+UHlLdyph8ahFrCVXG84wTmeVfEZlQolKLJlM34L0VWWIuWFIbNPoX0Qovwlx2c3gRvRiSw4r0SIgTmo9ellzWtzepzmf++0S8SIQSYS4f27KXT4lcnVReepSByUQsJKRUl0gEiTa7EDma1OrYirwOgm5kOl8i4kFCXH6Wsq+L9AAW5sIaJTwqwAAAAABJRU5ErkJggg==" alt=""><span class="sel"></span><img class="seta" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAATElEQVR4nGNkYGD4z0AEYGFgYGD48OENXkUCAiIQheiCyABmCBO6wg8f3mC1AUMhzFR0xRgKsSnCUIiuCJnNhEsRThMJBREjA5EBDgBQYx9FwC3T+AAAAABJRU5ErkJggg==" alt=""></span>
+                <span class="nome">Conversor de arquivo</span>
+              </a>
+            </li>
+            <li>
+              <a class="pasta atalho" href="https://www.tldraw.com/" target="_blank" rel="noopener" aria-label="Desenho rascunho (abre em outra aba)">
+                <span class="icone" aria-hidden="true"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAaCAYAAADSbo4CAAAAvklEQVR4nO2XUQrDMAxD5bID+CP3P+E+eoPsY/WWmaZ1VsdmMEEQgkLlB6Yp4akKu2jgWbMWAHVd7wAAo4+UHlLdyph8ahFrCVXG84wTmeVfEZlQolKLJlM34L0VWWIuWFIbNPoX0Qovwlx2c3gRvRiSw4r0SIgTmo9ellzWtzepzmf++0S8SIQSYS4f27KXT4lcnVReepSByUQsJKRUl0gEiTa7EDma1OrYirwOgm5kOl8i4kFCXH6Wsq+L9AAW5sIaJTwqwAAAAABJRU5ErkJggg==" alt=""><span class="sel"></span><img class="seta" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAATElEQVR4nGNkYGD4z0AEYGFgYGD48OENXkUCAiIQheiCyABmCBO6wg8f3mC1AUMhzFR0xRgKsSnCUIiuCJnNhEsRThMJBREjA5EBDgBQYx9FwC3T+AAAAABJRU5ErkJggg==" alt=""></span>
+                <span class="nome">Desenho rascunho</span>
+              </a>
+            </li>
           </ul>
-          <p class="rodape-janela"><span>2 itens</span><span>espaço livre: sei lá</span></p>
+          <p class="rodape-janela"><span>5 itens</span><span>espaço livre: sei lá</span></p>
         </div>
       </section>
 
@@ -783,6 +803,9 @@ irvao@casa:~$ uptime
     "  DIR             lista as pastas\n" +
     "  INVENTARIO      abre o inventário da casa\n" +
     "  JOGO            abre a ficha de RPG\n" +
+    "  ONLINE          um site caiu ou é só comigo?\n" +
+    "  CONVERSOR       converte arquivos de um formato para outro\n" +
+    "  DESENHO         quadro de desenho rascunho\n" +
     "\n" +
     "  CLIMA           o tempo em Arujá agora e amanhã\n" +
     "  DOLAR           cotação do dólar e do euro\n" +
@@ -807,9 +830,12 @@ irvao@casa:~$ uptime
 
   const comandos = {
     ajuda: () => escreve(AJUDA),
-    dir: () => escreve("  <DIR>  INVENTARIO\n  <DIR>  JOGO\n         2 pasta(s)"),
+    dir: () => escreve("  <DIR>  INVENTARIO\n  <DIR>  JOGO\n  <LNK>  ESTA ONLINE?\n  <LNK>  CONVERSOR DE ARQUIVO\n  <LNK>  DESENHO RASCUNHO\n         5 item(ns)"),
     inventario: () => { escreve("Abrindo INVENTARIO..."); setTimeout(() => location.href = "/inventario/", 350); },
     jogo: () => { escreve("Abrindo JOGO..."); setTimeout(() => location.href = "/jogo/", 350); },
+    online: () => externo("Está online?", "https://downforeveryoneorjustme.com/"),
+    conversor: () => externo("Conversor de arquivo", "https://cloudconvert.com/"),
+    desenho: () => externo("Desenho rascunho", "https://www.tldraw.com/"),
     clima, dolar, ip,
     rede: async () => { escreve("Conferindo a rede...", "eco"); await conferir(); escreve(textos[rede][0]); },
     casa: () => servico("casa"),
@@ -828,6 +854,10 @@ irvao@casa:~$ uptime
     },
     caveira: (arg) => caveiraDiz(arg.replace(/^diz\s*/i, ""))
   };
+  function externo(nome, url) {
+    escreve(`Abrindo ${nome}...`);
+    window.open(url, "_blank", "noopener");
+  }
   function servico(chave) {
     const s = SERVICOS[chave];
     escreve(rede === "casa" ? `Abrindo ${s.nome}...` : `${s.nome}: só abre na rede de casa ou com o Tailscale.`);
@@ -836,7 +866,8 @@ irvao@casa:~$ uptime
   const apelidos = {
     help: "ajuda", "?": "ajuda", ls: "dir", clear: "cls", limpar: "cls", whoami: "quemsou",
     "cd inventario": "inventario", "cd jogo": "jogo", tempo: "clima", "dólar": "dolar", cambio: "dolar",
-    "câmeras": "cameras", camera: "cameras", foto: "fotos", homarr: "painel", reboot: "boot", reiniciar: "boot"
+    "câmeras": "cameras", camera: "cameras", foto: "fotos", homarr: "painel", reboot: "boot", reiniciar: "boot",
+    "esta online": "online", "esta online?": "online", caiu: "online", converter: "conversor", rascunho: "desenho", tldraw: "desenho"
   };
   const NOMES = Object.keys(comandos).filter((n) => n !== "sudo");
 
@@ -893,7 +924,7 @@ irvao@casa:~$ uptime
     "irvao-boot 4.51 carregando, aguarde...",
     "[  OK  ] Started Verificação da memória (640K).",
     "[  OK  ] Mounted /dev/irvao como C:",
-    "[  OK  ] Started Pasta FERRAMENTAS (2 itens).",
+    "[  OK  ] Started Pasta FERRAMENTAS (5 itens).",
     "[  OK  ] Reached target Caveira em posição.",
     "         Starting Procura do servidor de casa...",
     "[  OK  ] Started Terminal do Irving.",
